@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Resume Analysis Result</title>
+</head>
+
+<body>
+
+<h1>AI Resume Analysis Result</h1>
+
+<h2>Resume Score</h2>
+<h3 th:text="${score} + '/100'"></h3>
+
+<hr>
+
+<div th:utext="${result}"></div>
+
+<br><br>
+
+<a href="/">Analyze Another Resume</a>
+
+</body>
+</html>
